@@ -3,7 +3,7 @@ module "sandbox" {
 
   control_tower_parameters = {
     AccountEmail              = "jm.pcloud22+dev_env@gmail.com"
-    AccountName               = "Development"
+    AccountName               = "Test"
     ManagedOrganizationalUnit = "Application_Environment"
     SSOUserEmail              = "jm.pcloud22+dev_env@gmail.com"
     SSOUserFirstName          = "jm"
@@ -11,17 +11,17 @@ module "sandbox" {
   }
 
   account_tags = {
-    "Environment" = "Development"
+    "Environment" = "Test"
   }
 
   change_management_parameters = {
     change_requested_by = "Joe M"
-    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
+    change_reason       = "Adding a Test Environment"
   }
 
   custom_fields = {
     group = "non-prod"
   }
 
-  account_customizations_name = "Application_Development"
-}
+  account_customizations_name = "Application_Testing"
+}i
