@@ -2,8 +2,8 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "jm.pcloud22+sandbox_dev1@gmail.com"
-    AccountName               = "Development"
+    AccountEmail              = "jm.pcloud22+networkdev@gmail.com"
+    AccountName               = "Networkdev"
     ManagedOrganizationalUnit = "sandbox"
     SSOUserEmail              = "jm.pcloud22@gmail.com"
     SSOUserFirstName          = "jm"
@@ -16,12 +16,12 @@ module "sandbox" {
 
   change_management_parameters = {
     change_requested_by = "Joe M"
-    change_reason       = "Adding a Dev Environment"
+    change_reason       = "Adding a networking Dev Environment"
   }
 
   custom_fields = {
     group = "non-prod"
   }
 
-  account_customizations_name = "Application_Dev"
+  account_customizations_name = "NetworkingDev"
 }
