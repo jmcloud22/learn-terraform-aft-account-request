@@ -23,5 +23,5 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  #  account_customizations_name = "Application_Development"
+  account_customizations_name = "Application_UAT"
 }
